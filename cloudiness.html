@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!-- Landing Page -->
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherApp</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800|Roboto:400,400i" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+</head>
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar">
+    <ul>
+      <li id="homeButton"><a href="index.html">Lattitude</a></li>
+    </ul>
+    <!-- Dropdown list for Plots-->
+    <ul>
+      <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret">Plots</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="maxTemp.html">Max Temp</a></li>
+          <li><a href="humidity.html">Humidity</a></li>
+          <li><a href="cloudiness.html">Cloudiness</a></li>
+          <li><a href="windSpeed.html">Wind Speed</a></li>
+        </ul>
+      </li>
+      <li><a href="comparison.html">Comparison</a></li>
+      <li><a href="data.html">Data</a></li>
+    </ul>
+  </nav>
+  <br>
+<div class="body-a">
+  <!-- Headline -->
+  <div>
+    <div class="row">
+      <div class="col-md-8">
+        <section>
+          <header class="header">
+            <h2>Cloudiness</h2>
+          </header>
+          <hr>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="Resources/assets/images/Fig3.png" alt="Cloudiness Chart">
+            </div>
+            <div class="col-md-12">
+              <p>
+                There doesn't seem to be a real corrolation with lattitude and cloudiness, but it is interesting to see groupings at certain percentages of cloudiness across all latitudes.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="col-md-4">
+        <section>
+          <header class="header">
+            <h2>Visualizations</h2>
+          </header>
+          <hr>
+          <div class = "visualizations">
+            <div class="row">
+              <div class="col-md-6">
+                <a href="maxTemp.html"><img src="Resources/assets/images/Fig1.png" alt="Temp Chart"></a>
+              </div>
+              <div class="col-md-6">
+                <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" alt="humidity chart"></a>
+              </div>
+              <div class="col-md-6">
+                <a href="cloudiness.html"><img class="selected" src="Resources/assets/images/Fig3.png" alt="cloudiness chart"></a>
+              </div>
+              <div class="col-md-6">
+                <a href="windSpeed.html"><img src="Resources/assets/images/Fig4.png"alt="wind speed chart"></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
